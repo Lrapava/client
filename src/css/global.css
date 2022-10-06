@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:1.85vh;
+    /* background-color: #242424; */
+}
+
+#root {
+    /* background-color: #F0F0F0; */
+    background-color:gainsboro;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+#exceptFooter {
+    height: fit-content;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 2px 50px;
+    background-color: #242424;
+    /* width:100% */
+}
+
+.menu-bar {
+    list-style: none;
+}
+
+.menu-bar > li {
+    display: inline-block;
+    padding: 0px 1.3vw;
+}
+
+.menu-bar > li > a, .navbar--logo  {
+    text-decoration: none;
+    color:seashell;
+}
+
+.navbar--logo {
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* height:300px; */
+    padding: 2px 50px;
+    background-color: #242424;
+    color: seashell;
+    clear:both;
+}
+
+.footer--contact {
+    font-weight: 100;
+    font-size: 1.2vh;
+    padding:22.5px;
+}
+
+.footer--contact > h3 {
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.content {
+    width:100%;
+    /* background-color: blue; */
+}

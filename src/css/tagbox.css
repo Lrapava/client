@@ -1,0 +1,18 @@
+.tagbox {
+    width: fit-content;
+    height: max-content;
+    /* float:left; */
+    /* background-color:cornflowerblue; */
+    background-color: #303030;
+    padding: 3px 7px;
+    margin: 2px 3px;
+    border-radius: 7px;
+    color: gainsboro;
+    font-size:12px;
+}
+
+.tagbox > input {
+    height: 15px;
+    float: left;
+    margin-right: 4px;
+}

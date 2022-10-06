@@ -1,0 +1,39 @@
+.thumbnail {
+    background-color: #242424;
+    /* border-radius: 10px; */
+    text-decoration: none;
+    margin: 0.6rem 0.4rem;
+    width: 300px;
+}
+
+.thumbnail--link {
+    text-decoration: none;
+}
+
+.thumbnail--textbox {
+    color: seashell;
+    font-weight: 200;
+    padding: 7px;
+}
+
+.thumbnail--textbox > h3 {
+    color: seashell;
+    font-weight: 400;
+}
+
+.thumbnail--textbox > p {
+    color: seashell;
+    font-weight: 400;
+}
+
+.thumbnail--authors {
+    font-size:1.3vh;
+}
+
+.thumbnail--image {
+    height: 175px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+}
+
