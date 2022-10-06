@@ -8,7 +8,7 @@ export default function ViewProject(props) {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch("/db.json")
+        fetch("https://Lrapava.github.io/client/db.json")
         .then(res => res.json())
         .then(
             (result) => {
@@ -34,7 +34,7 @@ export default function ViewProject(props) {
 
     return (
         <div>
-            <div className="viewproject--thumbnail" style={{backgroundImage: `url("/projects/${project.id}/${project.img}")`}}>
+            <div className="viewproject--thumbnail" style={{backgroundImage: `url("https://Lrapava.github.io/client/projects/${project.id}/${project.img}")`}}>
                 <div className="viewproject--thumbnailText">
                     <div><h1 className="viewproject--projectTitle contrasted">{project.name}</h1></div>
                     <div className="viewproject--bottomText">

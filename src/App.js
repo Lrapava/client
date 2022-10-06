@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 
 import './css/global.css';
@@ -27,7 +26,7 @@ export default function App() {
     }, [database])
 
 	useEffect(() => {
-        fetch("http://localhost:3000/db.json")
+        fetch("http://Lrapava.github.io/client/db.json")
         .then(res => res.json())
         .then((result) => { 
 			setDatabase(prevData => result); 
@@ -42,11 +41,11 @@ export default function App() {
 				  <BrowserRouter>
             <Navbar/>
             <Routes>
-              <Route exact path="/"            element={<Search database={database}/>}/>
-              <Route exact path="/about"       element={<About/>}/>
-							<Route exact path="/home"        element={<Search database={database}/>}/>
-							<Route exact path="/search"      element={<Search database={database}/>}/>
-							<Route exact path="/project/:id" element={<ViewProject/>}/>
+              <Route exact path="/client/"            element={<Search database={database}/>}/>
+              <Route exact path="/client/about"       element={<About/>}/>
+							<Route exact path="/client/home"        element={<Search database={database}/>}/>
+							<Route exact path="/client/search"      element={<Search database={database}/>}/>
+							<Route exact path="/client/project/:id" element={<ViewProject/>}/>
             </Routes>
 				  </BrowserRouter>
         </div>

@@ -12,9 +12,9 @@ export default function Search({ database }) {
 
     const [searchData, setSearchData] = useState([database, [], tagSet]);
     // const [searchData, setSearchData] = useState([[],[],[]]);
-
+    
     useEffect(() => {
-        fetch("http://localhost:3000/db.json")
+        fetch("https://Lrapava.github.io/client/db.json")
         .then(res => res.json())
         .then(
             (result) => {

@@ -6,8 +6,8 @@ export default function Navbar() {
             <Link to="/"><h1 className="navbar--logo">Website name</h1></Link>
               <nav>
                 <ul className="menu-bar">
-                    <li><Link to="/search">Search</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/client/search">Search</Link></li>
+                    <li><Link to="/client/about">About</Link></li>
                 </ul>
             </nav>
         </header>
