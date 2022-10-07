@@ -55,7 +55,7 @@ export default function ViewProject(props) {
                     {
                         project.files.map((filename, index) => (
                             <div className="viewproject--fileContainer" key={ index }>
-                                <a key={index} className="viewproject--link" href={`https://Lrapava.github.io/client/projects/projects/${project.id}/${filename}`} download>
+                                <a key={index} className="viewproject--link" href={`https://Lrapava.github.io/client/projects/${project.id}/${filename}`} download>
                                     <div className="viewproject--filename"> { filename } </div>
                                 </a>
                             </div>
