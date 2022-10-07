@@ -14,18 +14,18 @@ export default function Search({ database }) {
     // const [searchData, setSearchData] = useState([[],[],[]]);
     
     useEffect(() => {
-        fetch("https://Lrapava.github.io/client/db.json")
+        fetch(`${window.location.origin}${process.env.PUBLIC_URL}/db.json`)
         .then(res => res.json())
         .then(
             (result) => {
-                setSearchData(prevData => [result, prevData[1], tagSet])
+                setSearchData(prevData => [result, prevData[1], prevData[2]])
             }
         )
     }, [])
 
     function handleTags(tag) {
         if (searchData[1].includes(tag)) 
-            setSearchData(prevData => [prevData[0], prevData[1].filter(element => element != tag), prevData[2]])
+            setSearchData(prevData => [prevData[0], prevData[1].filter(element => element !== tag), prevData[2]])
         else 
             setSearchData(prevData => [prevData[0], [tag, ...prevData[1]], prevData[2]])
     }
